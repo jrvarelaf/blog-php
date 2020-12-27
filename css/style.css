@@ -1,0 +1,433 @@
+* {
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: #ebebeb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #bb1f35;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+.container .endpost {
+    margin-bottom: 100px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*----- Header ------*/
+
+header {
+    color: white;
+    margin-bottom: 30px;
+    background: #bb1f35;
+}
+
+header .container {
+    overflow: hidden;
+}
+
+header .logo {
+    max-width: 300px;
+}
+
+header .logo a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    line-height: 70px;
+}
+
+header .logo a:hover {
+    text-decoration: none;
+}
+
+header .search {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    line-height: 70px;
+}
+
+/* Pseudo-Elements for Placeholder Color */
+header .search input[type="text"]::-webkit-input-placeholder {
+    color: rgb(250, 214, 214); 
+} /* WebKit */
+header .search input[type="text"]::-moz-placeholder {
+    color: rgb(250, 214, 214); 
+} /* Firefox 19+ */
+
+header .search input[type="text"] {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    height: 30px;
+    padding: 0 10px;
+    padding-right: 32px;
+}
+
+header .search input[type="text"]:hover,
+header .search input[type="text"]:focus {
+    color: white;
+    border: 1px solid #fff;
+}
+
+header .search .icon {
+    color: white;
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 16px;
+    line-height: 58px;
+}
+
+header .search .icon:hover {
+    color: white;
+}
+
+header .menu {
+    display: inline-block;
+}
+
+header .menu ul {
+    list-style: none;
+}
+
+header .menu ul li {
+    display: inline-block;
+    line-height: 4.375rem;
+}
+
+header .menu ul li a {
+    color: white;
+    display: block;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+header .menu ul li a:hover {
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header .menu ul li a .icon {
+    margin-left: 15px;
+}
+
+/*---- post ----*/
+.post {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    margin-bottom: 30px;
+    padding:30px;
+}
+
+.post article {
+    margin-bottom: 20px;
+}
+
+.post article .tittle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    line-height: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.post article .tittle a {
+    color: #000;
+}
+
+.post article .date {
+    color: #747474;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+}
+
+.post article .thumb {
+    margin-bottom: 20px;
+}
+
+.post article .thumb img {
+    margin:10px auto;
+	display:block;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.post article .intro {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.post article .content {
+    font-family: Verdana, Tahoma, sans-serif, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.post article .continue {
+    color: #bb1f35;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 15px;
+    display: inline-block;
+    margin: 15px 0;
+    background: #595959;
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    border: none;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background: #bb1f35;
+}
+
+
+/*---- footer ---*/
+
+footer {
+    background: #bb1f35;
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer .copyrigth {
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+/*---- pagination --*/
+
+.pagination {
+    margin-bottom: 100px;
+}
+
+.pagination ul {
+    list-style: none;
+    text-align: center;
+}
+
+.pagination ul li {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.pagination ul li a {
+    display: block;
+    padding: 10px 20px;
+    background: #595959;
+    color: #fff;
+}
+
+.pagination ul li a:hover {
+    background: #bb1f35;
+    text-decoration: none;
+}
+
+.pagination ul .active {
+    background: #bb1f35;
+    padding: 10px 20px;
+}
+
+.pagination ul .disabled {
+    background: #a8a8a8;
+    padding: 10px 20px;
+    cursor: not-allowed;
+}
+
+.pagination ul .disabled:hover {
+    background: #a8a8a8;
+}
+
+/*--- form ---*/
+
+.form {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form textarea {
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #141938;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form textarea:focus {
+    border: 2px solid #595959;
+    padding: 15px;
+}
+
+.form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 300px;
+}
+
+.form input[type="submit"] {
+    padding: 15px;
+    background: #595959;
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background: #bb1f35;
+}
+
+.form .error {
+    color: red;
+}
+
+.form .error ul {
+    padding: 0 15px;
+}
+
+.form .error ul li {
+    margin-bottom: 10px;
+}
+
+/*--- contact ---*/
+
+.contact .form {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contact .form input[type="text"],
+.contact .form input[type="email"],
+.contact .form textarea {
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #141938;
+}
+
+.contact .form input[type="text"]:focus,
+.contact .form input[type="email"]:focus,
+.contact .form textarea:focus {
+    border: 2px solid #595959;
+    padding: 15px;
+}
+
+.contact .form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+}
+
+.contact .form input[type="submit"] {
+    padding: 15px;
+    margin-top: 30px;
+    background: #595959;
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+.contact .form input[type="submit"]:hover {
+    background: #bb1f35;
+}
+
+.contact .form .error {
+    color: red;
+}
+
+.contact .form .success {
+    color: green;
+}
+
+.contact .form .error ul {
+    padding: 0 15px;
+}
+
+.contact .form .error ul li {
+    margin-bottom: 10px;
+}
+
+
+/* --- honey pot login ---*/
+.form input[type="email"] { 
+    display: none;
+}
+
+/*--- honey pot search ---*/
+.search input[type="email"] { 
+    display: none;
+}  
+
+/*--- honey pot contact ---*/
+.contact .form input[type="country"] { 
+    display: none;
+}
